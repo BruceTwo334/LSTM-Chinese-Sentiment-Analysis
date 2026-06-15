@@ -1,0 +1,64 @@
+{
+  "accuracy": 0.8586287412438972,
+  "macro_f1": 0.8596367876644693,
+  "calibration": {
+    "neutral_bias": 0.10000000000000003,
+    "emotion_margin": 0.06,
+    "neu_min_prob": 0.18,
+    "strong_threshold": 0.28,
+    "lex_pos_w": 0.6,
+    "lex_neg_w": 0.0,
+    "lex_hit_threshold": 2,
+    "neu_hint_w": 0.0
+  },
+  "classification_report": {
+    "积极": {
+      "precision": 0.8969816272965879,
+      "recall": 0.8707006369426752,
+      "f1-score": 0.8836457659987071,
+      "support": 3140.0
+    },
+    "中性": {
+      "precision": 0.7628458498023716,
+      "recall": 0.9216809933142311,
+      "f1-score": 0.8347750865051903,
+      "support": 3141.0
+    },
+    "消极": {
+      "precision": 0.95424583171772,
+      "recall": 0.7835084368035657,
+      "f1-score": 0.8604895104895105,
+      "support": 3141.0
+    },
+    "accuracy": 0.8586287412438972,
+    "macro avg": {
+      "precision": 0.8713577696055598,
+      "recall": 0.8586300223534907,
+      "f1-score": 0.8596367876644693,
+      "support": 9422.0
+    },
+    "weighted avg": {
+      "precision": 0.8713550500282204,
+      "recall": 0.8586287412438972,
+      "f1-score": 0.8596342394816702,
+      "support": 9422.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      2734,
+      348,
+      58
+    ],
+    [
+      186,
+      2895,
+      60
+    ],
+    [
+      128,
+      552,
+      2461
+    ]
+  ]
+}

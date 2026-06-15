@@ -1,0 +1,40 @@
+{
+  "raw_path": "./data/weibo_3class.csv",
+  "clean_path": "./data/weibo_3class_clean.csv",
+  "min_len": 2,
+  "before": {
+    "total": 112743,
+    "label_dist": {
+      "0": 54762,
+      "1": 8799,
+      "2": 49182
+    },
+    "features": {
+      "count": 112743,
+      "has_at": 0.5799827927232732,
+      "has_url": 0.047461926682809574,
+      "has_emoji_tag": 1.0,
+      "has_retweet": 0.4692885589349228,
+      "avg_len": 65.95882671207968,
+      "short_ratio_lt5": 0.0003104405595025855
+    }
+  },
+  "after": {
+    "total": 109976,
+    "label_dist": {
+      "0": 53279,
+      "1": 8626,
+      "2": 48071
+    },
+    "features": {
+      "count": 109976,
+      "has_at": 0.010511384302029534,
+      "has_url": 0.0,
+      "has_emoji_tag": 0.0,
+      "has_retweet": 0.0006365025096384666,
+      "avg_len": 40.19866152615116,
+      "short_ratio_lt5": 0.04056339564995999
+    },
+    "dropped_too_short": 2767
+  }
+}

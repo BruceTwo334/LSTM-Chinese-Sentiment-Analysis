@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# IDE / 编辑器
+.idea/
+.vscode/
+.cursor/
+
+# 数据缓存（可本地重建）
+data/labeled_clean_cache.pkl
+
+# 中间版本数据集（运行 preprocess.py 可生成）
+data/weibo_3class_clean.csv
+data/weibo_3class_balanced.csv
+data/weibo_3class_balanced_v3.csv
+data/weibo_3class_balanced_v4.csv
+
+# 汇报素材（体积大，不提交；视频请交学校平台）
+presentation/*.pptx
+presentation/*.mp4
+presentation/ppt_extract.txt
+presentation/video_script_v2.md
+ppt制作参考/
+projects/
+
+# 训练日志
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

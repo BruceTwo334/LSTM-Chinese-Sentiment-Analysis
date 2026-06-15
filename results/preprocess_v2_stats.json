@@ -1,0 +1,55 @@
+{
+  "version": "v2_balanced",
+  "raw_path": "./data/weibo_3class.csv",
+  "output_path": "./data/weibo_3class_balanced.csv",
+  "neutral_supplement": 6000,
+  "before": {
+    "total": 112743,
+    "label_dist": {
+      "0": 54762,
+      "1": 8799,
+      "2": 49182
+    },
+    "features": {
+      "count": 112743,
+      "has_at": 0.5799827927232732,
+      "has_url": 0.047461926682809574,
+      "has_emoji_tag": 1.0,
+      "has_retweet": 0.4692885589349228,
+      "avg_len": 65.95882671207968,
+      "short_ratio_lt5": 0.0003104405595025855
+    }
+  },
+  "after_clean": {
+    "total": 112525,
+    "label_dist": {
+      "0": 54748,
+      "1": 8644,
+      "2": 49133
+    },
+    "dropped_too_short": 218,
+    "emoji_kept": 181831,
+    "emoji_removed": 75920
+  },
+  "after_balance": {
+    "total": 43932,
+    "label_dist": {
+      "0": 14644,
+      "1": 14644,
+      "2": 14644
+    },
+    "features": {
+      "count": 43932,
+      "has_at": 0.0092643175817172,
+      "has_url": 0.0,
+      "has_emoji_tag": 0.678867340435218,
+      "has_retweet": 0.0004324865701538742,
+      "avg_len": 41.559114085404715,
+      "short_ratio_lt5": 0.013794045342802513
+    },
+    "pos_downsampled_from": 54748,
+    "neg_downsampled_from": 49133,
+    "neutral_original": 8644,
+    "neutral_supplemented": 6000
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "v4_plain_strong_lexicon",
+  "output_path": "./data/weibo_3class_balanced_v4.csv",
+  "neutral_supplement": 8000,
+  "strong_pos_supplement": 2500,
+  "strong_neg_supplement": 2500,
+  "plain_pos_supplement": 1000,
+  "plain_neg_supplement": 1000,
+  "before": {
+    "total": 112743,
+    "label_dist": {
+      "0": 54762,
+      "1": 8799,
+      "2": 49182
+    },
+    "features": {
+      "count": 112743,
+      "has_at": 0.5799827927232732,
+      "has_url": 0.047461926682809574,
+      "has_emoji_tag": 1.0,
+      "has_retweet": 0.4692885589349228,
+      "avg_len": 65.95882671207968,
+      "short_ratio_lt5": 0.0003104405595025855
+    }
+  },
+  "after_balance": {
+    "total": 47061,
+    "label_dist": {
+      "0": 15687,
+      "1": 15687,
+      "2": 15687
+    },
+    "features": {
+      "count": 47061,
+      "has_at": 0.008818342151675485,
+      "has_url": 0.0,
+      "has_emoji_tag": 0.6911880325534944,
+      "has_retweet": 0.0005949724825226833,
+      "avg_len": 40.22011856951616,
+      "short_ratio_lt5": 0.013663118080788763
+    },
+    "neutral_original": 8644,
+    "neutral_supplemented": 7043,
+    "strong_pos_emoji": 969,
+    "strong_neg_emoji": 435,
+    "strong_pos_plain": 28,
+    "strong_neg_plain": 30,
+    "dropped_too_short": 218
+  }
+}
